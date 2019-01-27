@@ -1,0 +1,35 @@
+@import 'node_modules/bootstrap/scss/_functions.scss';
+@import 'node_modules/bootstrap/scss/_variables.scss';
+@import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss';
+
+$grid-breakpoints: (
+  // Extra small screen / phone
+  xs: 0,
+  // Small screen / phone
+  sm: 576px,
+  // Medium screen / tablet
+  md: 768px,
+  // Large screen / desktop
+  lg: 992px,
+  // Extra large screen / wide desktop
+  xl: 1200px
+);
+
+$bg-xs: #00cccc;
+$bg-sm: #00b3b3;
+$bg-md: #009999;
+$bg-lg: #008080;
+$bg-xl: #006666;
+body {
+    @include media-breakpoint-only(xs) {
+        background: $bg-xs;
+
+    }
+
+    @include media-breakpoint-up(sm) {background: $bg-sm}
+    @include media-breakpoint-up(md) {background:  $bg-md }
+    @include media-breakpoint-up(lg) { background: $bg-lg}
+    @include media-breakpoint-up(xl) { background: $bg-xl }
+}
+
+//START CUSTOM STYLES HERE
