@@ -16,7 +16,8 @@ git config --list --show-origin
 
 IMPORTANT!!! pulling first time
 git init [the folder]
-git remote add origin https://github.com/hypnobluez/clean.git
+git clone https://github.com/hypnobluez/passcode.git
+git remote add origin https://github.com/hypnobluez/passcode.git
 git fetch --all
 git pull --all
 git branch -r | grep -v '\->' | while read remote; do git branch --track "${remote#origin/}" "$remote"; done
