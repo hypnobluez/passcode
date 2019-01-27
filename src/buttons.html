@@ -15,7 +15,15 @@
   <div w3-include-html="nav.html"></div>
   <div class="container">
     <!-- MAIN CONTENT START -->
-    <h1 class="text-light">Home</h1>
+    <div id="ee">
+      <button class="btn btn-outline-primary btn-sm m-2" onclick="w3.sortHTML('#ff','button')">Something small</button>
+      <button class="btn btn-outline-warning btn m-2" onclick="w3.sortHTML('#ff','button')">Something medium</button>
+      <button class="btn btn-outline-light btn-lg m-2" onclick="w3.sortHTML('#ff','button')">Something large</button>
+    </div>
+    <div id="ff">
+      <button class="btn btn-outline-warning btn-lg btn-block m-2" onclick="w3.sortHTML('#ee','button')">Primary text success background</button>
+      <button class="fa fa-keyboard-o h-100 btn btn-outline-danger m-2" onclick="w3.sortHTML('#ee','button')">Keyboard</button>
+    </div>
 
 
 
