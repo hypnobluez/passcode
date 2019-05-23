@@ -5,10 +5,10 @@
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
-    "lodash": "4.17.10",
-    "react": "16.3.2",
-    "react-dom": "16.3.2",
-    "react-scripts": "1.1.4"
+    "lodash": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-scripts": "latest"
   },
   "devDependencies": {},
   "scripts": {
@@ -16,5 +16,17 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
